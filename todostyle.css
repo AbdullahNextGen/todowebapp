@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mainbox{
+    width: 320px;
+    border: 2px solid darkblue;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    box-shadow: 24px 23px 63px 5px rgba(2,0,77,0.24);
+-webkit-box-shadow: 24px 23px 63px 5px rgba(2,0,77,0.24);
+-moz-box-shadow: 24px 23px 63px 5px rgba(2,0,77,0.24);
+}
+
+.heading{
+    font-size: 26px;
+    color: darkblue;
+}
+
+.mainbox .addbox{
+width: 100%;
+display: flex;
+gap: 8px;
+}
+
+.mainbox .addbox input{
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 100px;
+    border: 2px solid darkblue;
+
+    }
+
+    .mainbox .addbox input::placeholder{
+        color: rgb(219, 219, 237);
+    
+        }
+
+    .mainbox .addbox button{
+        padding: 8px 14px;
+        border-radius: 100px;
+        border: none;
+background-color: darkblue;
+color: white;
+
+        }
+
+        .tasklist{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .tasklist .taskcomponent{
+            display: flex;
+            gap: 8px;
+    
+            justify-content: space-between;
+            background-color: rgb(251, 251, 255);
+            padding: 10px 16px;
+            border-radius: 100px;
+            border: 2px solid rgb(247, 247, 255);
+        }
+
+        .cross{
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            color: rgb(226, 45, 45);
+            cursor: pointer;
+        }
+
+        .check{
+            display: flex;
+            gap: 8px;
+        }
